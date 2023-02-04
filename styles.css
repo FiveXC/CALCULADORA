@@ -1,0 +1,54 @@
+/*CENTRALIZANDO E AJUSTANDO CALCULADORA*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 170, 35);
+    height: 100%;       
+}
+
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:white;
+}
+
+h2{
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.calculadora{
+    position:absolute; /* SERVE PARA QUE  A TAG  OCUPE SÓ O ESPAÇO DELA*/
+    background-color: black;
+    top:50%; /* TOP: LEFT: e TRANSFORM: JUNTOS, SERVE PARA CENTRALIZAR A CALCULADORA*/
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px; /* PADDING É A DISTANCIA DOS ELEMENTOS PARA COM A BORDA*/
+}
+/*ESTILIZANDO BOTÕES ( COR DE FUNDO, TAMANHO e etc)*/
+.botão{
+    width: 50px; /* LARGURA*/
+    height: 50px; /* ALTURA*/ 
+    font-size:25px; /* TAMANHO DA FONTE*/
+    cursor:pointer; /* SERVE PARA O CURSOR MUDAR DE CETA PARA MÃO*/
+    background-color:rgb(34, 33, 33);
+    color:#fff;
+    border:none; /* SERVE PARA TIRAR BORDA*/
+    margin:3px; /* SERVIU PARA AFASTAR UM BOTÃO DO OUTRO*/
+
+}
+.botão:hover{ /* SERVE PARA QUANDO O MOUSE PASSAR POR CIMA DO BOTÃO ELE MUDE DE COR*/
+    background-color: black;
+}
+
+.resultado{
+    color:black;
+    text-align: right;
+    background-color: #fff;
+    width: 207px; /*LARGURA*/
+    height: 30px; /* ALTURA*/
+    margin:auto; /* SERVIU PARA DEIXAR NO CENTRO*/
+    font-size:25px; /* TAMANHO DA FONTE*/
+    padding:5px; /* PADDING É A DISTANCIA DOS ELEMENTOS PARA COM A BORDA*/
+}
